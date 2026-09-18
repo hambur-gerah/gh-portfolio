@@ -11,7 +11,7 @@ import logo from "@/public/images/home/logo.png";
 export default function Navigation() {
   return (
     <>
-      <div className="fixed top-0 z-50  flex bg-[#3e603e] w-full mx-auto p-2 text-[#F9D77E] text-md font-bold font-noto-sans-mono justify-between ">
+      <div className="lg:sticky top-0 z-50 flex bg-[#3e603e] w-full mx-auto p-2 text-[#F9D77E] text-md font-bold font-noto-sans-mono justify-between">
         <div className="flex gap-4 justify-start">
           <Image src={logo} alt="Logo" className="w-10 h-10" />
           <p className="text-l font-bricolage-grotesque text-[#F9D77E] my-auto">
@@ -19,7 +19,7 @@ export default function Navigation() {
           </p>
         </div>
         <div className="flex gap-4 justify-end">
-          <NavigationMenu className="w-full mr-12">
+          <NavigationMenu className="w-full mr-12 hidden lg:block">
             <NavigationMenuList className="flex gap-4">
               <NavigationMenuItem>
                 <NavigationMenuLink
@@ -78,20 +78,20 @@ export default function Navigation() {
                   </span>
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              <NavigationMenuItem>
+              {/* <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#"
                   className={`${navigationMenuTriggerStyle()} group/navitem hover:bg-transparent hover:text-muted-foreground`}
                 >
                   <span className="relative inline-block">
-                    Travel
+                    Blog
                     <span
                       aria-hidden="true"
                       className="pointer-events-none absolute inset-x-0 -bottom-1.5 h-0.5 origin-left scale-x-0 bg-[#D67000] transition-transform duration-300 ease-out group-hover/navitem:scale-x-100"
                     />
                   </span>
                 </NavigationMenuLink>
-              </NavigationMenuItem>
+              </NavigationMenuItem> */}
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#"
