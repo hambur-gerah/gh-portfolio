@@ -12,7 +12,7 @@ export default function SelectedWorks() {
       <div className=" grid gap-7 lg:gap-12 py-12 px-5 lg:p-30 bg-[#EAD9BD]">
         <div className="grid gap-2">
           <div className="text-md  font-noto-sans-mono font-bold text-[#D67000] ">
-            Crafted with Intent
+            CRAFTED WITH INTENT
           </div>
           <div className="flex justify-between">
             <div className="text-[38px] font-noto-sans-mono font-bold text-[#314B30] ">

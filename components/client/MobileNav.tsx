@@ -1,3 +1,4 @@
+"use client";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -49,9 +50,9 @@ export default function () {
   const path = usePathname();
   return (
     <>
-      <div className="fixed bottom-0 left-0 z-50 w-full bg-[#314B30] lg:hidden">
+      <div className="sticky bottom-0 left-0 z-50 w-full bg-[#314B30] lg:hidden">
         <NavigationMenu className="w-full max-w-auto">
-          <NavigationMenuList className="flex flex-row gap-1 py-5 ">
+          <NavigationMenuList className="flex flex-row gap-1 py-1 ">
             {navButtons.map((item) => (
               <NavigationMenuItem key={item.path}>
                 <NavigationMenuLink
